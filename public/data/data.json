@@ -90,7 +90,7 @@
   {
     "id": 9,
     "img": 1,
-    "is_hot": true,
+    "is_hot": false,
     "description": "Serous conjunctivitis, except viral, right eye",
     "beds": 9,
     "stars": 9,
@@ -145,7 +145,7 @@
   {
     "id": 14,
     "img": 5,
-    "is_hot": true,
+    "is_hot": false,
     "description": "Adverse effect of antacids and anti-gstrc-sec drugs, sequela",
     "beds": 14,
     "stars": 14,

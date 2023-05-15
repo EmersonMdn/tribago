@@ -30,7 +30,9 @@ export default function Header({ apartments, setApartments, getApartments }) {
     <>
       <header>
         <nav className="navbar">
-          <img src="./media/logo.png" alt="" />
+          <a href="/">
+            <img src="./media/logo.png" alt="" />
+          </a>
           <div>
             <form
               className="form"
@@ -43,6 +45,7 @@ export default function Header({ apartments, setApartments, getApartments }) {
                 name="location"
                 className="input-location"
                 placeholder="Find location"
+                autoComplete="none"
                 onChange={searchLocation}
               />
               <input

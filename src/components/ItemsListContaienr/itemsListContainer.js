@@ -3,6 +3,8 @@ import React from "react";
 export default function ItemsListContainer({ apartments }) {
   return (
     <>
+      <h3> All Stays</h3>
+
       <div className="items-container">
         {apartments.map((e) => (
           <div className="card" key={e.id}>
