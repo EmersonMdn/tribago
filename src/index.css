@@ -6,15 +6,18 @@
   box-sizing: border-box;
   font-family: Poppins;
 }
+
 .main-container {
   margin: 0 5%;
   text-align: center;
+  overflow: hidden;
 }
 
 /*? TOPBAR **/
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem;
 }
@@ -189,4 +192,13 @@ main {
 .not-founded {
   color: #eb5757;
   font-weight: 600;
+}
+
+
+/** ------ MEDIA QUERIS --------------**/
+
+@media (max-width: 568px) {
+  .card {
+    width: 340px;
+  }
 }

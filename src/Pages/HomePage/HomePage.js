@@ -29,7 +29,7 @@ export default function HomePage() {
         <Routes>
           <Route path="/" element={<Main apartments={apartments} />} />
           <Route
-            path="/item"
+            path="/detail/:productId"
             element={<ItemDetail apartments={apartments} />}
           />
         </Routes>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header({ apartments, setApartments, getApartments }) {
   const [findLocation, setFindLocation] = useState("");
@@ -30,9 +31,9 @@ export default function Header({ apartments, setApartments, getApartments }) {
     <>
       <header>
         <nav className="navbar">
-          <a href="/">
+          <Link to="/">
             <img src="./media/logo.png" alt="" />
-          </a>
+          </Link>
           <div>
             <form
               className="form"
