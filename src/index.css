@@ -10,6 +10,7 @@
 .main-container {
   margin: 0 5%;
   text-align: center;
+  overflow: hidden;
 }
 
 /*? TOPBAR **/
@@ -70,7 +71,7 @@
 /********* TOP BAR  MAIN *******/
 
 main {
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 5rem;
 }
 
