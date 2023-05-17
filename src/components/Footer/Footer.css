@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer ul li {
+  list-style: circle;
+  display: inline-block;
+
+  color: #3d3d3d;
+  font-size: 15px;
+  padding: 1rem 0.5rem;
+
+  cursor: pointer;
+}
+.footer ul li:first-child:hover {
+  text-decoration: none;
+  cursor: default;
+}
+.footer ul li:hover {
+  text-decoration: underline;
+}

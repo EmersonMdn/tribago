@@ -3,14 +3,13 @@
   grid-template-areas:
     "img details"
     "img details";
-  grid-template-rows: auto auto;
+  grid-template-rows: 12rem 12rem;
   grid-template-columns: 1fr 1fr;
 }
 
 .item-detail-img {
   grid-area: img;
   background-color: #2323;
-  height: 24rem;
 }
 .item-detail-img img {
   height: 100%;
@@ -56,21 +55,24 @@
 .btn-order {
   background-color: #eb5757;
   border: 1px solid #2223;
-  border-radius: 9px 0px 0 9px;
+
   color: #fff;
   font-size: 1.2rem;
-  padding: 0.4rem 10rem !important;
-  margin: 0 !important;
 }
 .buttons {
-  border: none;
-  border-radius: 9px;
-  background-color: rgba(241, 227, 241, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
 }
 .buttons a {
-  color: #eb5757;
+  background-color: #eb5757;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+  color: #fff;
+  font-size: 1.2rem;
   text-decoration: none;
-  padding: 0 3rem;
 }
 
 .details-icons {
@@ -100,11 +102,23 @@
   font-size: 15px;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1100px) {
   .item-detail-container {
     grid-template-areas:
       "img img"
       "details details";
+    grid-template-rows: auto auto;
+  }
+  .item-detail-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 1300px) {
+  .item-detail-container {
+    grid-template-rows: auto auto;
+  }
+  .item-detail-img img {
+    width: 100%;
   }
 }
 
@@ -127,21 +141,48 @@
   color: #fff;
 }
 
+@media (max-width: 568px) {
+  .login-banner {
+    font-size: 11px;
+  }
+  .login-banner button {
+    font-size: 11px;
+  }
+}
+
 .accommodations {
-  display: flex;
+  display: grid;
+  grid-template-areas:
+    "amenities conditions"
+    "amenities conditions"
+    "about about";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
   gap: 2rem;
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem; */
+}
+
+@media (max-width: 568px) {
+  .accommodations {
+    grid-template-areas:
+      "amenities amenities"
+      "conditions conditions"
+      "about about";
+  }
 }
 
 .accommodation-amenities-container {
-  width: 100%;
-
+  grid-area: amenities;
   background-color: #b3b3b3;
   margin-top: 1rem;
   border-radius: 6px;
   padding: 2rem;
 }
 .accommodation-conditions-container {
-  width: 100%;
+  grid-area: conditions;
   background-color: #b3b3b3;
   line-height: 34px;
 
@@ -156,6 +197,7 @@
 
 .accommodation-amenities {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 3rem;
@@ -175,4 +217,18 @@
 .accommodation-conditions p {
   text-align: left;
   color: #3d3d3d;
+}
+
+.about-container {
+  grid-area: about;
+  margin-top: .5rem;
+}
+
+.about-container h3{
+  margin-top: 1rem;
+}
+
+.about-container p{
+  font-size: 14px;
+  color: #3d3d3d
 }

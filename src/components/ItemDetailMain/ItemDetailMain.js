@@ -44,14 +44,27 @@ export default function ItemDetailMain() {
             <div className="accommodation-conditions">
               <h4>Schedule</h4>
               <p>
-                <i class="fa-solid fa-person-walking-arrow-right"></i> Check-in:
+                <i className="fa-solid fa-person-walking-arrow-right"></i> Check-in:
                 12:00
               </p>
               <p>
-                <i class="fa-solid fa-person-walking-arrow-loop-left"></i>{" "}
+                <i className="fa-solid fa-person-walking-arrow-loop-left"></i>{" "}
                 Check-out: 10:00
               </p>
             </div>
+          </div>
+          <div className="about-container">
+            <hr></hr>
+            <h3>About this place</h3>
+            <p>
+              This unique place has a style all its own. A very quiet homely
+              house with a modern contemporary style. 25 mins to downtown
+              Ottawa. The antidote to hotel rooms and sterile Airbnb rentals.
+              Aesthetic and comfort abound in the charming and well furnished
+              unit. Spacious and drenched in natural light. Take a look around,
+              we’d love to host you. The space Eclectic & minimalistic room in a
+              townhouse in a lovely neighbourhood in Ottawa. Home away from home
+            </p>
           </div>
         </div>
       </div>

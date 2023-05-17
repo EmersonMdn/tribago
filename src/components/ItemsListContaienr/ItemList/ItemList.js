@@ -34,7 +34,7 @@ export default function ItemList({ apartments }) {
           </div>
           <div className="card-description" onClick={() => handleDetail(e.id)}>
             <h4>{e.description}</h4>
-            <p className="price-desc">{e.price}</p>
+            <p className="price-desc">${e.price}</p>
           </div>
         </div>
       ))}

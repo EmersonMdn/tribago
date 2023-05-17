@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import Main from "../../components/Main/Main";
 import { Route, Routes } from "react-router-dom";
 import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
+import Footer from "../../components/Footer/Footer";
 
 export default function HomePage() {
   const [apartments, setApartments] = useState([]);
@@ -35,7 +36,8 @@ export default function HomePage() {
       </div>
 
       {/* <!--Pie de página--> */}
-      <footer className="footer">&copy; Emerson Medina - Mayo 2023 </footer>
+      <Footer />
+      <footer className="footer"></footer>
     </>
   );
 }

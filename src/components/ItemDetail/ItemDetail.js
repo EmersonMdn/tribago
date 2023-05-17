@@ -3,6 +3,7 @@ import "./ItemDetail.css";
 import ItemDetailMain from "../ItemDetailMain/ItemDetailMain";
 
 export default function ItemDetail({ item }) {
+  console.log(typeof parseInt(item.price));
   return (
     <>
       <div className="topbanner">
@@ -28,26 +29,28 @@ export default function ItemDetail({ item }) {
         <div className="item-detail-details">
           <h2 className="detail-description"> {item.description} </h2>
           <p className="details-icons">
-            <i class="fa-solid fa-wifi"></i>
-            <i class="fa-solid fa-tv"></i>
-            <i class="fa-solid fa-shower"></i>
-            <i class="fa-solid fa-mug-hot"></i>
-            <i class="fa-solid fa-utensils"></i>
+            <i className="fa-solid fa-wifi"></i>
+            <i className="fa-solid fa-tv"></i>
+            <i className="fa-solid fa-shower"></i>
+            <i className="fa-solid fa-mug-hot"></i>
+            <i className="fa-solid fa-utensils"></i>
           </p>
-          <p className="detail-type">{item.type} </p>
+          <p className="detail-type">{item.type}, 1 night </p>
           {/* <p className="detail-beds">Beds: {item.beds} </p> */}
 
           <span className="detail-rate">
-            <i className="fa-solid fa-star"></i> Rate: {item.stars}
+            <i className="fa-solid fa-star"></i> Rate: {item.stars} -{" "}
+            <small>14 reviews</small>
           </span>
 
-          <p className="detail-price">{item.price}</p>
+          <p className="detail-price">${item.price} </p>
+          <small>Taxes included</small>
           <div className="buttons">
             <button className="btn btn-order">
-              <i class="fa-solid fa-tags"></i> Order
+              <i className="fa-solid fa-tags"></i> Order
             </button>
-            <Link to="/" className="btn-back">
-              <i class="fa-regular fa-circle-left"></i> Back
+            <Link to="/" className="btn btn-back">
+              <i className="fa-regular fa-circle-left"></i> Back
             </Link>
           </div>
         </div>

@@ -6,7 +6,7 @@
     "description": "Struck by falling object on merchant ship, initial encounter",
     "beds": null,
     "stars": 1,
-    "price": "$1377.25",
+    "price": "1377.25",
     "location": "California",
     "type": "Private room",
     "about": ""
@@ -18,7 +18,7 @@
     "description": "Unspecified open wound, right hip, sequela",
     "beds": 2,
     "stars": 2,
-    "price": "$2937.96",
+    "price": "2937.96",
     "location": "Baisha",
     "type": "Entire apartment",
     "about": ""
@@ -30,7 +30,7 @@
     "description": "Atlantica Apartamentos Imbassai",
     "beds": 3,
     "stars": 3,
-    "price": "$858.16",
+    "price": "858.16",
     "location": "Imbassai, Brazil",
     "type": "Entire apartment",
     "about": ""
@@ -42,7 +42,7 @@
     "description": "Lacerat intrns musc/fasc/tend r little finger at wrs/hnd lv",
     "beds": 4,
     "stars": 4,
-    "price": "$2813.96",
+    "price": "2813.96",
     "location": "Fushan",
     "type": "Entire apartment",
     "about": ""
@@ -54,7 +54,7 @@
     "description": "Diab due to undrl cond w diabetic prph angiopath w gangrene",
     "beds": 5,
     "stars": 5,
-    "price": "$497.97",
+    "price": "497.97",
     "location": "Khulm",
     "type": "Entire house",
     "about": ""
@@ -66,7 +66,7 @@
     "description": "Presence of tooth-root and mandibular implants",
     "beds": 6,
     "stars": 6,
-    "price": "$794.12",
+    "price": "794.12",
     "location": "Kochetok",
     "type": "Entire house",
     "about": ""
@@ -78,7 +78,7 @@
     "description": "Oth osteopor w crnt path fx, l hand, 7thG",
     "beds": 7,
     "stars": 7,
-    "price": "$1089.05",
+    "price": "1089.05",
     "location": "Maracás",
     "type": "Entire apartment",
     "about": ""
@@ -90,7 +90,7 @@
     "description": "Major laceration of inferior mesenteric artery, subs encntr",
     "beds": 8,
     "stars": 8,
-    "price": "$2697.51",
+    "price": "2697.51",
     "location": "Morteros",
     "type": "Entire apartment",
     "about": ""
@@ -102,7 +102,7 @@
     "description": "Serous conjunctivitis, except viral, right eye",
     "beds": 9,
     "stars": 9,
-    "price": "$1467.82",
+    "price": "1467.82",
     "location": "Yelenendorf",
     "type": "Private room",
     "about": ""
@@ -114,7 +114,7 @@
     "description": "Encntr screen for malignant neoplasm of genitourinary organs",
     "beds": 10,
     "stars": 10,
-    "price": "$2321.21",
+    "price": "2321.21",
     "location": "London",
     "type": "Entire house",
     "about": ""
@@ -126,7 +126,7 @@
     "description": "Unspecified injury of lung, unspecified, subs encntr",
     "beds": 11,
     "stars": 11,
-    "price": "$888.70",
+    "price": "888.70",
     "location": "Bambous Virieux",
     "type": "Private room",
     "about": ""
@@ -138,7 +138,7 @@
     "description": "Poisoning by barbiturates, assault, initial encounter",
     "beds": 12,
     "stars": 12,
-    "price": "$1642.83",
+    "price": "1642.83",
     "location": "Guadalupe",
     "type": "Private room",
     "about": ""
@@ -150,7 +150,7 @@
     "description": "Vertigo from infrasound, initial encounter",
     "beds": 13,
     "stars": 13,
-    "price": "$1507.32",
+    "price": "1507.32",
     "location": "Hong Kong",
     "type": "Private room",
     "about": ""
@@ -162,7 +162,7 @@
     "description": "Adverse effect of antacids and anti-gstrc-sec drugs, sequela",
     "beds": 14,
     "stars": 14,
-    "price": "$1448.90",
+    "price": "1448.90",
     "location": "Russia",
     "type": "Entire apartment",
     "about": ""
@@ -174,7 +174,7 @@
     "description": "Monoplg low lmb fol oth cerebvasc disease aff unsp side",
     "beds": 15,
     "stars": 15,
-    "price": "$1434.96",
+    "price": "1434.96",
     "location": "Tokyo",
     "type": "Entire house",
     "about": ""
@@ -186,7 +186,7 @@
     "description": "Other effects of deprivation",
     "beds": 16,
     "stars": 16,
-    "price": "$1009.25",
+    "price": "1009.25",
     "location": "Amazonas",
     "type": "Private room",
     "about": ""
@@ -198,7 +198,7 @@
     "description": "Hotel de las Bellas Artes",
     "beds": 3,
     "stars": 4.4,
-    "price": "$1732.56",
+    "price": "1732.56",
     "location": "Madrid, Spain",
     "type": "Entire apartment",
     "about": ""
@@ -210,7 +210,7 @@
     "description": "Displaced unsp fx left great toe, subs for fx w routn heal",
     "beds": 18,
     "stars": 18,
-    "price": "$988.14",
+    "price": "988.14",
     "location": "Toyonaka",
     "type": "Entire apartment",
     "about": ""
@@ -222,7 +222,7 @@
     "description": "Maternal care for oth fetal problems, unsp tri, fetus 4",
     "beds": 19,
     "stars": 19,
-    "price": "$2399.97",
+    "price": "2399.97",
     "location": "San Ramon",
     "type": "Entire apartment",
     "about": ""
@@ -234,7 +234,7 @@
     "description": "Displ commnt suprcndl fx w/o intrcndl fx r humer, 7thP",
     "beds": 20,
     "stars": 20,
-    "price": "$1950.30",
+    "price": "1950.30",
     "location": "Yanqul",
     "type": "Private room",
     "about": ""
@@ -246,7 +246,7 @@
     "description": "Unsp fracture of T9-T10 vertebra, init for opn fx",
     "beds": 21,
     "stars": 21,
-    "price": "$2683.44",
+    "price": "2683.44",
     "location": "Borzoy",
     "type": "Entire apartment",
     "about": ""
@@ -258,7 +258,7 @@
     "description": "Oth intraop and postproc comp and disorders of resp sys, NEC",
     "beds": 22,
     "stars": 22,
-    "price": "$1375.13",
+    "price": "1375.13",
     "location": "Bariloche, Argentina",
     "type": "Private room",
     "about": ""
@@ -270,7 +270,7 @@
     "description": "Solitary bone cyst",
     "beds": 23,
     "stars": 23,
-    "price": "$1486.04",
+    "price": "1486.04",
     "location": "New York",
     "type": "Entire house",
     "about": ""
@@ -282,7 +282,7 @@
     "description": "Driveway of boarding-house as place",
     "beds": 24,
     "stars": 24,
-    "price": "$1107.88",
+    "price": "1107.88",
     "location": "Cuba",
     "type": "Entire house",
     "about": ""
@@ -294,7 +294,7 @@
     "description": "Stenosis of other vascular prosth dev/grft, sequela",
     "beds": 25,
     "stars": 25,
-    "price": "$1309.77",
+    "price": "1309.77",
     "location": "Philippines",
     "type": "Entire house",
     "about": ""

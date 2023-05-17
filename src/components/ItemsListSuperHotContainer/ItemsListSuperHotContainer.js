@@ -57,7 +57,7 @@ export default function ItemsListContainer({ apartments }) {
                       <h4 onClick={() => handleDetail(e.id)}>
                         {e.description}
                       </h4>
-                      <p className="price-desc">{e.price}</p>
+                      <p className="price-desc">${e.price}</p>
                     </div>
                   </div>
                 </div>
