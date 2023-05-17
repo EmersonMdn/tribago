@@ -4,15 +4,15 @@ import { useNavigate } from "react-router-dom";
 export default function ItemList({ apartments }) {
   const navegate = useNavigate();
 
-  const handleDetail = () => {
-    navegate("/hola");
+  const handleDetail = (id) => {
+    navegate(`/detail/${id}`);
   };
 
   return (
     <>
       {apartments.map((e) => (
         <div className="card" key={e.id}>
-          <div className="card-img" onClick={handleDetail}>
+          <div className="card-img" onClick={() => handleDetail(e.id)}>
             <img src={`./img/ap${e.img}.jpg`} alt="" />
           </div>
 
@@ -32,7 +32,7 @@ export default function ItemList({ apartments }) {
               <span> {e.stars} </span>
             </div>
           </div>
-          <div className="card-description" onClick={handleDetail}>
+          <div className="card-description" onClick={() => handleDetail(e.id)}>
             <h4>{e.description}</h4>
             <p className="price-desc">{e.price}</p>
           </div>

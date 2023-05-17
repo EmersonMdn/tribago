@@ -1,10 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function ItemsListContainer({ apartments }) {
   const filteredItems = apartments.filter((e) => e.is_hot === true);
   const [width, setWidth] = useState(0);
   const carousel = useRef();
+
+  const navegate = useNavigate();
+
+  const handleDetail = (id) => {
+    navegate(`/detail/${id}`);
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -47,7 +54,9 @@ export default function ItemsListContainer({ apartments }) {
                       </div>
                     </div>
                     <div className="card-description-bottom">
-                      <h4>{e.description}</h4>
+                      <h4 onClick={() => handleDetail(e.id)}>
+                        {e.description}
+                      </h4>
                       <p className="price-desc">{e.price}</p>
                     </div>
                   </div>

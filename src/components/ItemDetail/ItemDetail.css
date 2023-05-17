@@ -1,0 +1,33 @@
+.item-detail-container {
+  display: grid;
+  grid-template-areas:
+    "img details"
+    "img details";
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 0 2rem 0;
+}
+
+.item-detail-img {
+  grid-area: img;
+}
+
+.item-detail-details {
+  grid-area: details;
+}
+
+.topbanner {
+  background-color: #eb5757;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+
+@media (max-width: 920px) {
+  .item-detail-container {
+    grid-template-areas:
+      "img img"
+      "details details";
+  }
+}

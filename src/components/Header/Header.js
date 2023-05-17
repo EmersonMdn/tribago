@@ -32,7 +32,7 @@ export default function Header({ apartments, setApartments, getApartments }) {
       <header>
         <nav className="navbar">
           <Link to="/">
-            <img src="./media/logo.png" alt="" />
+            <img src="/media/logo.png" alt="" />
           </Link>
           <div>
             <form
