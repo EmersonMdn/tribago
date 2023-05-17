@@ -14,12 +14,10 @@ export default function ItemDetailContainer() {
     };
 
     getApartments().then((data) => {
-      console.log(data);
       let itemFilter = data.filter(
         (data) => data.id === parseInt(params.productId)
       );
       setItem(...itemFilter);
-      console.log(...itemFilter);
     });
   }, [params]);
 

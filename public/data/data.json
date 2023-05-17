@@ -8,7 +8,8 @@
     "stars": 1,
     "price": "$1377.25",
     "location": "California",
-    "type": "Private room"
+    "type": "Private room",
+    "about": ""
   },
   {
     "id": 2,
@@ -19,18 +20,20 @@
     "stars": 2,
     "price": "$2937.96",
     "location": "Baisha",
-    "type": "Entire apartment"
+    "type": "Entire apartment",
+    "about": ""
   },
   {
     "id": 3,
     "img": 1,
     "is_hot": false,
-    "description": "Crushing injury of left thigh, initial encounter",
+    "description": "Atlantica Apartamentos Imbassai",
     "beds": 3,
     "stars": 3,
     "price": "$858.16",
-    "location": "Hawai",
-    "type": "Entire apartment"
+    "location": "Imbassai, Brazil",
+    "type": "Entire apartment",
+    "about": ""
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "stars": 4,
     "price": "$2813.96",
     "location": "Fushan",
-    "type": "Entire apartment"
+    "type": "Entire apartment",
+    "about": ""
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "stars": 5,
     "price": "$497.97",
     "location": "Khulm",
-    "type": "Entire house"
+    "type": "Entire house",
+    "about": ""
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "stars": 6,
     "price": "$794.12",
     "location": "Kochetok",
-    "type": "Entire house"
+    "type": "Entire house",
+    "about": ""
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "stars": 7,
     "price": "$1089.05",
     "location": "Maracás",
-    "type": "Entire apartment"
+    "type": "Entire apartment",
+    "about": ""
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "stars": 8,
     "price": "$2697.51",
     "location": "Morteros",
-    "type": "Entire apartment"
+    "type": "Entire apartment",
+    "about": ""
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "stars": 9,
     "price": "$1467.82",
     "location": "Yelenendorf",
-    "type": "Private room"
+    "type": "Private room",
+    "about": ""
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
     "stars": 10,
     "price": "$2321.21",
     "location": "London",
-    "type": "Entire house"
+    "type": "Entire house",
+    "about": ""
   },
   {
     "id": 11,
@@ -118,7 +128,8 @@
     "stars": 11,
     "price": "$888.70",
     "location": "Bambous Virieux",
-    "type": "Private room"
+    "type": "Private room",
+    "about": ""
   },
   {
     "id": 12,
@@ -129,7 +140,8 @@
     "stars": 12,
     "price": "$1642.83",
     "location": "Guadalupe",
-    "type": "Private room"
+    "type": "Private room",
+    "about": ""
   },
   {
     "id": 13,
@@ -140,7 +152,8 @@
     "stars": 13,
     "price": "$1507.32",
     "location": "Hong Kong",
-    "type": "Private room"
+    "type": "Private room",
+    "about": ""
   },
   {
     "id": 14,
@@ -151,7 +164,8 @@
     "stars": 14,
     "price": "$1448.90",
     "location": "Russia",
-    "type": "Entire apartment"
+    "type": "Entire apartment",
+    "about": ""
   },
   {
     "id": 15,
@@ -162,7 +176,8 @@
     "stars": 15,
     "price": "$1434.96",
     "location": "Tokyo",
-    "type": "Entire house"
+    "type": "Entire house",
+    "about": ""
   },
   {
     "id": 16,
@@ -173,18 +188,20 @@
     "stars": 16,
     "price": "$1009.25",
     "location": "Amazonas",
-    "type": "Private room"
+    "type": "Private room",
+    "about": ""
   },
   {
     "id": 17,
     "img": 5,
     "is_hot": true,
-    "description": "Collapse of dam or man-made struct cause earth movmnt, init",
-    "beds": 17,
-    "stars": 17,
+    "description": "Hotel de las Bellas Artes",
+    "beds": 3,
+    "stars": 4.4,
     "price": "$1732.56",
-    "location": "Spain",
-    "type": "Entire apartment"
+    "location": "Madrid, Spain",
+    "type": "Entire apartment",
+    "about": ""
   },
   {
     "id": 18,
@@ -195,7 +212,8 @@
     "stars": 18,
     "price": "$988.14",
     "location": "Toyonaka",
-    "type": "Entire apartment"
+    "type": "Entire apartment",
+    "about": ""
   },
   {
     "id": 19,
@@ -206,7 +224,8 @@
     "stars": 19,
     "price": "$2399.97",
     "location": "San Ramon",
-    "type": "Entire apartment"
+    "type": "Entire apartment",
+    "about": ""
   },
   {
     "id": 20,
@@ -217,7 +236,8 @@
     "stars": 20,
     "price": "$1950.30",
     "location": "Yanqul",
-    "type": "Private room"
+    "type": "Private room",
+    "about": ""
   },
   {
     "id": 21,
@@ -228,7 +248,8 @@
     "stars": 21,
     "price": "$2683.44",
     "location": "Borzoy",
-    "type": "Entire apartment"
+    "type": "Entire apartment",
+    "about": ""
   },
   {
     "id": 22,
@@ -239,7 +260,8 @@
     "stars": 22,
     "price": "$1375.13",
     "location": "Bariloche, Argentina",
-    "type": "Private room"
+    "type": "Private room",
+    "about": ""
   },
   {
     "id": 23,
@@ -250,7 +272,8 @@
     "stars": 23,
     "price": "$1486.04",
     "location": "New York",
-    "type": "Entire house"
+    "type": "Entire house",
+    "about": ""
   },
   {
     "id": 24,
@@ -261,7 +284,8 @@
     "stars": 24,
     "price": "$1107.88",
     "location": "Cuba",
-    "type": "Entire house"
+    "type": "Entire house",
+    "about": ""
   },
   {
     "id": 25,
@@ -272,6 +296,7 @@
     "stars": 25,
     "price": "$1309.77",
     "location": "Philippines",
-    "type": "Entire house"
+    "type": "Entire house",
+    "about": ""
   }
 ]
