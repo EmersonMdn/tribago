@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { Order } from "../../contex/OrdersContex";
 
 export default function Header({ apartments, setApartments, getApartments }) {
   const [findLocation, setFindLocation] = useState("");
   const [finded, setFinded] = useState(false);
+
+  const { editQuantity } = useContext(Order);
 
   const searchLocation = async (e) => {
     const apartmentsAux = await getApartments();
@@ -50,10 +53,13 @@ export default function Header({ apartments, setApartments, getApartments }) {
                 onChange={searchLocation}
               />
               <input
-                type="text"
+                type="number"
                 name="add-guests"
                 className="input-guests"
                 placeholder="Add guests"
+                onChange={(e) => {
+                  editQuantity(e.target.value);
+                }}
               />
               <button className="search-btn">
                 <i className="fa-solid fa-magnifying-glass"></i>{" "}

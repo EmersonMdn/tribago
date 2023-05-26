@@ -4,6 +4,7 @@ import Main from "../../components/Main/Main";
 import { Route, Routes } from "react-router-dom";
 import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
 import Footer from "../../components/Footer/Footer";
+import ReservationPage from "../ReservationPage/ReservationPage";
 
 export default function HomePage() {
   const [apartments, setApartments] = useState([]);
@@ -32,6 +33,7 @@ export default function HomePage() {
             path="/detail/:productId"
             element={<ItemDetailContainer apartments={apartments} />}
           />
+          <Route path="/reservationpage/" element={<ReservationPage />} />
         </Routes>
       </div>
 

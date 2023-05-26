@@ -7,6 +7,18 @@
   font-family: Poppins;
 }
 
+body::-webkit-scrollbar {
+  width: 16px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(83, 83, 83); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(207, 207, 207); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */ /* creates padding around scroll thumb */
+}
 .main-container {
   margin: 0 5%;
   text-align: center;
@@ -105,19 +117,24 @@ main {
   padding: 0.5rem;
   margin-bottom: 4%;
 }
+.card-img {
+  border-radius: 24px;
+  height: 245px;
+  overflow: hidden;
+}
 
 .card-img img {
   width: 100%;
   height: 245px;
-  border-radius: 24px;
   object-fit: cover;
-  transition: 300ms ease-in-out;
+  transition: 600ms ease-in-out;
   /* pointer-events: none; */
 }
 
-.card-img img:hover {
+.items-container .card-img img:hover {
   cursor: pointer;
   box-shadow: 1px 1px 6px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.18);
 }
 .price-card {
   display: flex;

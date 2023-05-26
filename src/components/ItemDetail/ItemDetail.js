@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import "./ItemDetail.css";
 import ItemDetailMain from "../ItemDetailMain/ItemDetailMain";
+import { Order } from "../../contex/OrdersContex";
+import { useContext } from "react";
 
 export default function ItemDetail({ item }) {
-  console.log(typeof parseInt(item.price));
+  const { addOrder, quantity } = useContext(Order);
+
   return (
     <>
       <div className="topbanner">
@@ -11,10 +14,10 @@ export default function ItemDetail({ item }) {
           <i className="fa-solid fa-location-dot"></i> Location: {item.location}
         </p>
         <p>
-          <i className="fa-solid fa-calendar-days"></i> Select a day
+          <i className="fa-solid fa-calendar-days"></i> Today
         </p>
         <p>
-          <i className="fa-solid fa-user"></i> 3
+          <i className="fa-solid fa-user"></i> {quantity}
         </p>
         <button className="btn btn-modify">
           <i className="fa-solid fa-magnifying-glass"></i> Modify
@@ -40,15 +43,21 @@ export default function ItemDetail({ item }) {
 
           <span className="detail-rate">
             <i className="fa-solid fa-star"></i> Rate: {item.stars} -{" "}
-            <small>14 reviews</small>
+            <small> 14 reviews</small>
           </span>
 
           <p className="detail-price">${item.price} </p>
           <small>Taxes included</small>
           <div className="buttons">
-            <button className="btn btn-order">
-              <i className="fa-solid fa-tags"></i> Order
-            </button>
+            <Link
+              to="/reservationpage/"
+              className="btn btn-order"
+              onClick={() => {
+                addOrder(item, 1);
+              }}
+            >
+              <i className="fa-solid fa-tags"></i> Reserve
+            </Link>
             <Link to="/" className="btn btn-back">
               <i className="fa-regular fa-circle-left"></i> Back
             </Link>
