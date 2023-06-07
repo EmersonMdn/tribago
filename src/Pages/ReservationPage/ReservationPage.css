@@ -1,0 +1,143 @@
+.reservation-main {
+  display: grid;
+  grid-template-areas: "form cart";
+  grid-template-columns: 1fr 1fr;
+}
+.form-reservation {
+  grid-area: form;
+  min-height: 30rem;
+
+  background-image: url(https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_1280.jpg);
+  background-size: cover;
+  opacity: 73%;
+
+  display: flex;
+  justify-content: center;
+}
+.cart-container {
+  height: 100%;
+}
+.cart-reservation {
+  grid-area: cart;
+  min-height: 30rem;
+  background-color: rgb(228, 228, 228);
+  display: flex;
+  flex-direction: column;
+}
+.cart-reservation-info {
+  padding: 10px;
+  color: #d9d7d7;
+}
+.form-container-reservation {
+  background-color: rgba(0, 0, 0, 0.34);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+
+  height: 100%;
+  width: 50%;
+}
+.form-container-reservation input {
+  border-radius: 9px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  padding: 10px;
+  width: 65%;
+}
+.btn-next {
+  width: 5rem;
+  background-color: rgb(255, 255, 255);
+  color: var(--main-red);
+  font-size: 18px;
+  border: 1px solid var(--main-red) !important  ;
+}
+.order-title {
+  background-color: #373737;
+  color: aliceblue;
+}
+
+table {
+  border: 1px solid #373737;
+  background-color: #fff;
+  margin: 1rem;
+}
+thead {
+  background-color: #bebebe;
+}
+tbody {
+  background-color: #565656;
+  color: #e2e2e2;
+}
+td {
+  padding: 5px;
+}
+/* .form-container {
+  background-color: cornsilk;
+  margin: 0 10%;
+  display: grid;
+  grid-template-areas:
+    "username lastname card-img card-img"
+    "age email card-number card-number"
+    "phone .  ownername expiration "
+    ". .  security-number .";
+} */
+/* .form-container div {
+  border: 2px rgba(255, 0, 0, 0.208) solid;
+} */
+/* .form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0.4rem;
+  padding: 0.5rem;
+} */
+/* .form-group input {
+  border-radius: 8px;
+  border: 1px solid #33333354;
+  outline: none;
+  padding: 3px 10px;
+  font-size: 16px;
+  color: #b3b3b3;
+} */
+
+/* .form-group label::first-letter {
+  text-transform: uppercase;
+} */
+
+/** ---------  GRID AREAS  ----------------  ***/
+/* .wallet-gif {
+  grid-area: card-img;
+}
+.wallet-gif img {
+  height: 70px;
+}
+.username {
+  grid-area: username;
+}
+.lastname {
+  grid-area: lastname;
+}
+.card-number {
+  grid-area: card-number;
+}
+.age {
+  grid-area: age;
+}
+.email {
+  grid-area: email;
+}
+.ownername {
+  grid-area: ownername;
+}
+.phone {
+  grid-area: phone;
+}
+.expiration {
+  grid-area: expiration;
+}
+.security-number {
+  grid-area: security-number;
+} */

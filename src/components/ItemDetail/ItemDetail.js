@@ -23,9 +23,6 @@ export default function ItemDetail({ item }) {
         <p>
           <i className="fa-solid fa-user"></i> {quantity}
         </p>
-        <button className="btn btn-modify">
-          <i className="fa-solid fa-magnifying-glass"></i> Modify
-        </button>
       </div>
 
       <div className="item-detail-container">
@@ -38,6 +35,8 @@ export default function ItemDetail({ item }) {
             <i className="fa-solid fa-star"></i> Rate: {item.stars} -{" "}
             <small> 14 reviews</small>
           </span>
+          <p className="detail-type">{item.type}, 1 night </p>
+
           <h2 className="detail-description"> {item.description} </h2>
           <p className="details-icons">
             <i className="fa-solid fa-wifi"></i>
@@ -47,7 +46,7 @@ export default function ItemDetail({ item }) {
             <i className="fa-solid fa-utensils"></i>
           </p>
           <p className="detail-price">${item.price} </p>
-          <small>Taxes included</small>
+          <small>Per person | Taxes included</small>
 
           <div className="buttons">
             <Link
@@ -63,7 +62,6 @@ export default function ItemDetail({ item }) {
               <i className="fa-regular fa-circle-left"></i> Back
             </Link>
           </div>
-          <p className="detail-type">{item.type}, 1 night </p>
           {/* <p className="detail-beds">Beds: {item.beds} </p> */}
         </div>
       </div>

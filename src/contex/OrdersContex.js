@@ -5,6 +5,7 @@ export const Order = createContext();
 const OrdersProvider = ({ children }) => {
   const [order, setOrder] = useState([]);
   const [quantity, setQuantity] = useState([1]);
+  const [userData, setUserData] = useState([]);
 
   const addOrder = (neworder) => {
     setOrder({ order: { ...neworder }, quantity });
@@ -15,9 +16,22 @@ const OrdersProvider = ({ children }) => {
     if (newQuantity < 10) setQuantity(newQuantity);
   };
 
+  const getUserData = (data) => {
+    setUserData(data);
+    console.log(userData);
+  };
+
   return (
     <Order.Provider
-      value={{ order, quantity, setOrder, addOrder, editQuantity }}
+      value={{
+        order,
+        quantity,
+        userData,
+        setOrder,
+        addOrder,
+        editQuantity,
+        getUserData,
+      }}
     >
       {children}
     </Order.Provider>

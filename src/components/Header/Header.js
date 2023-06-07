@@ -1,12 +1,17 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Order } from "../../contex/OrdersContex";
 
 export default function Header({ apartments, setApartments, getApartments }) {
+  const navegate = useNavigate();
   const [findLocation, setFindLocation] = useState("");
   const [finded, setFinded] = useState(false);
 
   const { editQuantity } = useContext(Order);
+
+  const handleSearch = () => {
+    navegate("/");
+  };
 
   const searchLocation = async (e) => {
     const apartmentsAux = await getApartments();
@@ -20,13 +25,12 @@ export default function Header({ apartments, setApartments, getApartments }) {
     });
 
     //? COMPROBAR SI HAY RESULTADOS
-    if (findLocation.length <= 1 || apartmentsFindeds <= 0) {
+    if (findLocation.length < 1 || apartmentsFindeds <= 0) {
       apartmentsFindeds = apartmentsAux;
       setFinded(true);
     } else {
       setFinded(false);
     }
-
     setApartments(apartmentsFindeds);
   };
 
@@ -61,7 +65,7 @@ export default function Header({ apartments, setApartments, getApartments }) {
                   editQuantity(e.target.value);
                 }}
               />
-              <button className="search-btn">
+              <button className="search-btn" onClick={handleSearch}>
                 <i className="fa-solid fa-magnifying-glass"></i>{" "}
               </button>
             </form>

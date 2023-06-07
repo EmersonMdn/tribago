@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&family=Raleway:wght@100;400&family=Rubik:wght@400;600;700&display=swap");
 
+:root {
+  --main-red: #eb5757;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +45,6 @@ body::-webkit-scrollbar-thumb {
 .form {
   display: flex;
   border-radius: 20px;
-  /* border: 1px solid #333; */
 }
 
 .form input {
@@ -71,7 +74,7 @@ body::-webkit-scrollbar-thumb {
 
 .search-btn i {
   font-size: 1rem;
-  color: red;
+  color: var(--main-red);
   font-weight: bold;
   cursor: pointer;
 }
@@ -160,25 +163,25 @@ main {
 }
 
 .price-desc {
-  color: #eb5757;
+  color: var(--main-red);
   font-size: 1.3rem;
   font-weight: 600;
   padding: 0 1rem;
 }
 
 .fa-star {
-  color: #eb5757;
+  color: var(--main-red);
 }
 
 .super-hot {
-  border: 2px solid #eb5757;
+  border: 2px solid var(--main-red);
   border-radius: 24px;
   margin-right: 6px;
   padding: 2px 4px;
-  color: #eb5757;
+  color: var(--main-red);
 }
 .super-hot-title {
-  color: #eb5757;
+  color: var(--main-red);
   font-weight: 600;
 }
 
@@ -206,7 +209,7 @@ main {
 /**    ----------  DETALLES      ----------------       **/
 
 .not-founded {
-  color: #eb5757;
+  color: var(--main-red);
   font-weight: 600;
 }
 
