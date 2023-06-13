@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 import { Order } from "../../contex/OrdersContex";
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const FormReservation = () => {
   const { order, getUserData } = useContext(Order);
+  const navegate = useNavigate();
 
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [id, setId] = useState("");
 
   const [steps, setSteps] = useState(0);
+
+  const handleReserved = () => {
+    navegate(`/reserved`);
+  };
 
   const usernameHandle = (e) => {
     setUsername(e.target.value);
@@ -78,7 +84,7 @@ export const FormReservation = () => {
               required
             />
             <input
-              type="email"
+              type="text"
               name="text"
               className="form-name"
               placeholder="card name"
@@ -86,7 +92,7 @@ export const FormReservation = () => {
             />
             <input
               name="id"
-              type="number"
+              type="text"
               className="form-name"
               placeholder="security PIN"
               required
@@ -101,7 +107,7 @@ export const FormReservation = () => {
               >
                 <i className="fa-solid fa-backward"></i>
               </button>
-              <button className="btn btn-next">
+              <button className="btn btn-next" onClick={handleReserved}>
                 <i className="fa-solid fa-forward"></i>
               </button>
             </div>
@@ -163,11 +169,6 @@ export const FormReservation = () => {
           )}
         </div>
       </div>
-
-          
-
-
-
     </div>
   );
 };
