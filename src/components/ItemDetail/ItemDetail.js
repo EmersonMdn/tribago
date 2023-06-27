@@ -4,9 +4,13 @@ import ItemDetailMain from "../ItemDetailMain/ItemDetailMain";
 import { Order } from "../../contex/OrdersContex";
 import { useContext } from "react";
 import { Helmet } from "react-helmet";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 export default function ItemDetail({ item }) {
-  const { addOrder, quantity } = useContext(Order);
+  const { quantity } = useContext(Order);
+
+  const MySwal = withReactContent(Swal);
 
   return (
     <>
@@ -49,16 +53,16 @@ export default function ItemDetail({ item }) {
           <small>Per person | Taxes included</small>
 
           <div className="buttons">
-            <Link
+            <button
               to="/reservationpage/"
               className="btn btn-order"
               onClick={() => {
-                addOrder(item, quantity);
+                MySwal.fire("Reserved", "", "success");
               }}
             >
               <i className="fa-solid fa-tags"></i> Reserve
-            </Link>
-            <Link to="/" className="btn btn-back">
+            </button>
+            <Link to={"/"} className="btn btn-back">
               <i className="fa-regular fa-circle-left"></i> Back
             </Link>
           </div>

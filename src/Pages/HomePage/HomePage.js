@@ -5,7 +5,6 @@ import { Route, Routes } from "react-router-dom";
 import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
 import Footer from "../../components/Footer/Footer";
 import ReservationPage from "../ReservationPage/ReservationPage";
-import { ReservedPage } from "../ReservedPage/ReservedPage";
 
 export default function HomePage() {
   const [apartments, setApartments] = useState([]);
@@ -35,7 +34,6 @@ export default function HomePage() {
             element={<ItemDetailContainer apartments={apartments} />}
           />
           <Route path="/reservationpage/" element={<ReservationPage />} />
-          <Route path="/reserved" element={<ReservedPage />} />
         </Routes>
       </div>
 
